@@ -44,9 +44,7 @@ namespace BookManager.Core
             {
                 Bind<IBookRepository>().To<DapperBookRepository>().InSingletonScope();
             }
-
-            Bind<CRUD>().ToSelf().InSingletonScope();
-            Bind<BLBook>().ToSelf().InSingletonScope();
+            Bind<IBookService>().To<BookService>().InSingletonScope();
         }
     }
 }

@@ -66,6 +66,5 @@ namespace BookManager.Core.Services
         {
             _repository.Delete(id);
         }
-
     }
 }
